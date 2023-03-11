@@ -1,0 +1,321 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+:root {
+    --color-green: rgb(2, 178, 2);
+    --url-banner-1: url('./assets/aula-1.webp');
+    --url-banner-2: url('./assets/aula-2.webp');
+    --url-banner-3: url('./assets/aula-3.webp');
+    --url-banner-4: url('./assets/aula-4.webp');
+}
+
+body {
+    background-color: rgb(32, 29, 29);
+}
+
+.div-1-main-1 img,
+.logo-header img {
+    width: 250px;
+    height: 150px;
+}
+
+.logo-header {
+    display: none;
+}
+
+header,
+.main-1,
+.grade-videos-menores{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aulas-1-ao-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+}
+
+.ajuste-aula {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.aula {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+
+}
+
+.aula img {
+    width: 15px;
+    height: 15px;
+}
+
+.ajuste-aula p {
+    color: var(--color-green);
+    font-size: 14px;
+}
+
+.texto-menor-aulas {
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.bloqueada {
+    opacity: 0.5;
+}
+
+.bg-nao-selecionado {
+    background-color: rgb(156, 156, 156);
+}
+
+.contador-tempo {
+    display: grid;
+    max-width: 300px;
+    width: 100%;
+}
+
+.tempo {
+    display: flex;
+}
+
+.texto-contador {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-bottom: 8px;
+}
+
+.numeros {
+    display: flex;
+    margin-right: 8px;
+}
+
+.numeros p {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.textos-menores {
+    font-size: 12px;
+    color: var(--color-green);
+}
+
+/*SESSAO VIDEO*/
+
+.main-1 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.video {
+    width: 100%;
+    max-width: 900px;
+    max-height: 450px;
+    max-width: 900px;
+
+}
+
+.video iframe {
+    border-radius: 18px;
+    width: 100%;
+    max-width: 900px;
+    height: 352px;
+    max-height: 352px;
+    max-width: 900px;
+}
+
+.textos-lado-video {
+    margin-left: 22px;
+}
+
+.titulo-da-aula {
+    font-size: 26px;
+    color: var(--color-green);
+    margin-bottom: 12px;
+}
+
+.sobre-da-aula {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.exibicao {
+    font-size: 12px;
+    opacity: .5;
+}
+
+/* BOTÃO WHATSAPP */
+.textos-e-botao-whatsapp {
+    width: 100%;
+    max-width: 700px;
+    padding: 55px;
+    margin: 0 auto;
+}
+
+.texto-cima-botao {
+    font-size: 18px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.whats-app {
+    width: 100%;
+    background-color: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 12px 0;
+    transition: .7s;
+}
+
+.whats-app:hover {
+    transform: scale(1.1);
+}
+
+.whats-app img {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+.whats-app p {
+    color: black;
+    font-size: 16px;
+}
+
+/* BANNERS VIDEOS */
+.videos-menores {
+    width: 100%;
+    background-color: rgb(44, 39, 39);
+    padding: 55px;
+}
+
+.grade-videos-menores {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.linha-vertical {
+    height: 200px;
+    background-color: rgb(122, 113, 113);
+    width: 1px;
+    margin: 0 12px;
+}
+
+.banner-video {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    max-width: 350px;
+    max-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.banner-video img {
+    width: 80px;
+    height: 80px;
+}
+
+.banner-video p {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    border-radius: 4px;
+}
+
+.banner-1 {
+    background-image: var(--url-banner-1);
+}
+
+.banner-2 {
+    background-image: var(--url-banner-2);
+}
+
+.banner-3 {
+    background-image: var(--url-banner-3);
+}
+
+.banner-4 {
+    background-image: var(--url-banner-4);
+}
+
+.banner-1,
+.banner-2,
+.banner-3,
+.banner-4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.titulo-video-menores {
+    font-size: 14px;
+    font-weight: lighter;
+
+}
+
+.texto-aula-disponivel {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.texto-bg-verde {
+    background-color: var(--color-green);
+    padding: 10px;
+    color: black;
+    margin-right: 12px;
+    border-radius: 4px;
+}
+
+.texto-disponivel {
+    color: var(--color-green);
+}
+
+footer {
+    padding: 32px;
+    margin-top: 30px;
+    background-color: rgb(27, 26, 26);
+}
+
+footer p {
+    text-align: center;
+    color: var(--color-green);
+    font-size: 12px;
+}
